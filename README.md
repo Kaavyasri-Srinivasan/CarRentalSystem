@@ -2,3 +2,5 @@
 
      .React js
      .MySQL
+     .CSS
+     .Java Script
