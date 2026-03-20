@@ -1,0 +1,136 @@
+/* Container for the car list page */
+.car-list-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Each car card as a row */
+.car-grid {
+  display: flex;
+  flex-direction: column; /* each card in vertical stack */
+  gap: 20px;
+}
+
+/* Individual car card */
+.car-card {
+  display: flex;             /* image on left, info on right */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent; /* default border */
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s;
+}
+
+/* Highlight entire card on hover with green border */
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #28a745; /* green border */
+}
+
+/* Not available cars */
+.car-card.not-available {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Car image on the left */
+.car-image {
+  width: 40%;                 
+  height: auto;
+  object-fit: contain;         
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-right: 1px solid #eee;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Placeholder for no image */
+.no-image {
+  width: 40%;
+  height: 180px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Car details on the right */
+.car-info {
+  width: 60%;                
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* Car title */
+.car-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Car details text */
+.car-info p {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+/* Status */
+.status.available {
+  color: green;
+  font-weight: bold;
+}
+
+.status.not-available {
+  color: red;
+  font-weight: bold;
+}
+
+/* Select button styles */
+.select-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-button:hover {
+  background-color: darkgreen;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .car-card {
+    flex-direction: column; /* stack image above info */
+  }
+
+  .car-image,
+  .no-image {
+    width: 100%;
+    border-right: none;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .car-info {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+/* Main container */
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form styles */
+.car-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.car-form input,
+.car-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-btn {
+  grid-column: span 2;
+  padding: 10px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #005fa3;
+}
+
+/* Table styles */
+.car-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.car-table th,
+.car-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.car-table th {
+  background: #0077cc;
+  color: white;
+}
+
+.car-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.car-table tr:hover {
+  background: #e9f5ff;
+}

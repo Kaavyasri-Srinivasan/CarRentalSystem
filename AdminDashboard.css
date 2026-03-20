@@ -1,0 +1,28 @@
+.admin-dashboard-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.admin-dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+.admin-dashboard-buttons button {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.admin-dashboard-buttons button:hover {
+  background: #1565c0;
+}
